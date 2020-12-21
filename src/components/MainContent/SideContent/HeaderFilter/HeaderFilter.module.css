@@ -1,0 +1,56 @@
+
+
+.TimeFilter {
+    width: 320px;
+    align-self: flex-end;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .TimeFilter p {
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px;
+    height: fit-content;
+    color: #444;
+    font-size: 12pt;
+    font-weight: bolder;
+    transition: 0.3s;
+  }
+  
+  .timeText {
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px;
+    height: fit-content;
+    color: #444;
+    font-size: 12pt;
+    font-weight: bolder;
+    transition: 0.3s;
+  }
+  
+  .timeText:hover {
+    color: #888;
+    border-radius: 6px;
+    background-color: rgba(151, 128, 156, 0.2);
+  }
+  
+  .timeTextActive {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: rgb(255, 232, 101);
+    color: #333;
+    text-decoration: none;
+    height: fit-content;
+    font-size: 12pt;
+    font-weight: bolder;
+    transition: 0.3s;
+  }
+  
+  .timeTextActive:hover {
+    background-color: rgb(216, 194, 71);;
+    color: #222;
+  }

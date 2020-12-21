@@ -1,0 +1,74 @@
+.FeaturedMain {
+  width: 80%;
+  height: 600px;
+  background-color: rgba(28, 31, 36, 0.9);
+  margin: 75px 0 0 0;
+  border-radius: 15px 15px 0 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.sticky {
+  margin: 125px 0 0 0;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 32% 32% 32% 4%;
+  z-index: 50;
+  margin-bottom: 500px;
+}
+
+.ItensContainer {
+  grid-template-areas:
+    "first first second scroll"
+    "first first third scroll"
+    "sixth fifth fourth scroll";
+}
+
+.firstItem {
+  grid-area: first;
+}
+
+.secondItem {
+  grid-area: second;
+}
+
+.thirdItem {
+  grid-area: third;
+}
+
+.fourthItem {
+  grid-area: fourth;
+}
+
+.fifthItem {
+  grid-area: fifth;
+}
+
+.sixthItem {
+  grid-area: sixth;
+}
+
+.scroll {
+  margin: auto;
+  width: 10%;
+  border-radius: 5px;
+  height: 96%;
+  background-color: #4a4e53;
+  grid-area: scroll;
+  position: relative;
+}
+
+.scrollBar {
+  margin: auto;
+  width: 100%;
+  border-radius: 5px;
+  height: 30%;
+  background-color: #7d1aba;
+  position: absolute;
+  top: 0%;
+}

@@ -1,0 +1,102 @@
+.SmallItem {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(151, 128, 156, 0);
+  border-radius: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.BigItem {
+  width: 95%;
+  height: 95%;
+  background-color: rgba(151, 128, 156, 0);
+  border-radius: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.gridBigItem {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  text-align: left;
+  grid-template-rows: 60% 40%;
+  position: relative;
+}
+
+.gridSmallItem {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  text-align: left;
+  grid-template-columns: 40% 60%;
+  position: relative;
+}
+
+.ItensContainer {
+  grid-template-areas:
+    "image"
+    "text";
+}
+
+.imageBigItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0px 0 60px;
+  object-position: 20% 10%; /* try 20px 10px */
+  object-fit: cover;
+}
+
+.imageSmallItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 20px 0px;
+  object-fit: cover;
+}
+
+.frontCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(151, 128, 156, 0.2);
+  transition: 0.4s;
+}
+
+.frontCover:hover{
+  opacity: 0;
+}
+
+.gridBigItem p {
+  width: 100%;
+  color: white;
+  vertical-align: top;
+  padding: 0 20px 60px;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.gridBigItem:hover p {
+    color: #9c4ecc;
+    text-shadow: 1px 1px rgba(213, 128, 255, 0.6);
+  }
+  
+
+.gridSmallItem p {
+  color: white;
+  padding: 0px 20px;
+  font-size: 13pt;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.gridSmallItem:hover p {
+    color: #9c4ecc;
+    text-shadow: 1px 1px rgba(213, 128, 255, 0.6);
+  }
+  

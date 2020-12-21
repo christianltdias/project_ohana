@@ -1,0 +1,73 @@
+.MainContent {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+}
+
+.TimeFilter {
+  width: 320px;
+  align-self: flex-start;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.timeText {
+  text-decoration: none;
+  margin-top: 5px;
+  padding: 5px;
+  height: fit-content;
+  color: #7d1aba;
+  font-size: 14pt;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.timeText:hover {
+  color: #7d1aba;
+  border-radius: 6px;
+  background-color: rgba(151, 128, 156, 0.2);
+}
+
+.timeTextActive {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #7d1aba;
+  color: white;
+  text-decoration: none;
+  height: fit-content;
+  font-size: 14pt;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.timeTextActive:hover {
+  background-color: #540187;
+  color: white;
+}
+
+.HeaderText {
+  color: #444444;
+  margin: 0 20px;
+  margin-bottom: 10px;
+  font-size: 20pt;
+  font-weight: 600;
+}
+
+.HorizontalDivider {
+  width: 60%;
+  align-self: flex-start;
+  height: 2px;
+  margin-top: 0;
+  margin-left: 20px;
+  border: none;
+  /* background-color: #54018773; */
+  background-image: linear-gradient(to right, #540187, white);
+}
+
+.ContentListContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

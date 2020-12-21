@@ -1,0 +1,36 @@
+.icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.container {
+  margin: 10px 10px;
+}
+
+.iconOverlay {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(76, 175, 80, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s ease;
+  opacity: 0;
+  color: white;
+  border-radius: 50%;
+}
+
+.iconOverlay:hover {
+  opacity: 0.8;
+}
+
+.iconOverlay:active {
+    background-color: #99ff9d;
+    opacity: 0.5;
+  }
+
+.imgContainer {
+  position: relative;
+}

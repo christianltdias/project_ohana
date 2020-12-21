@@ -1,0 +1,32 @@
+.imageItem {
+  width: 150px;
+  height: 150px;
+  /* border-radius: 20px 0 20px 0px; */
+  border-radius: 75px;
+  object-fit: cover;
+}
+
+.Item {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+
+.Text {
+ align-self: flex-start;
+ font-weight: bold;
+ font-size: 14pt;
+}
+
+.Item:hover {
+  background-color: #54018720;
+  border-radius: 20px;
+  color: #7d1aba;
+  font-weight: bold;
+  cursor: pointer;
+}

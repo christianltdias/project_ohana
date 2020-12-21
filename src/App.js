@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Featured from './components/Featured/FeaturedMenu/Featured';
+import NewsContent from './components/MainContent/MainContent';
+import Footer from './components/Footer/Footer'
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+
+
+  render() {
+    const menuSelectHandler = () => {
+      
+    }
+
+    return (
+      <div className="App">
+        <Header />
+        <section className="Content">
+          <Featured />
+          <NewsContent />
+          {/* <Footer /> */}
+        </section>
+      </div>
+    );
+  }
+
 }
 
 export default App;
